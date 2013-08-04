@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/tetris.css" rel="stylesheet" type="text/css">
+        <link href="css/small_device.css"  rel="stylesheet" type="text/css" media="only screen and (max-width: 480px),only screen and (max-device-width: 480px)" rel="external nofollow" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="span6">
+                <div id="metris"></div>
+            </div>
+            <div class="span6">
+                <h1>Tetris</h1> Written by Zeng Junyong . <a href="http://junyong.elance.com" target="_blank">http://junyong.elance.com</a><br/><br/><img src="img/smile.gif"/><span class="label label-success">PS: If at the bottom of tetris have a empty block , please try to click it .</span>
+                <hr/>
+                Score:<span id="score"></span>
+                <hr/>
+                Elapsed Time:<span id="time"></span>
+                <hr/>
+                Fall Speed:<span id="speed"></span> 
+                <hr/>
+                Next block：   
+                <div id="nextBlock"></div>                
+                A (left) S (down) D (right) <br/> W(fast down) <br/>J (anticlockwise) <br/>K (clockwise)
+                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <h3 id="myModalLabel">Game Over , The Top 10 scores</h3>
+                  </div>
+                  <div class="modal-body">
+                        <ul id="top10">
+                        </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="newGame">New game</button>
+                  </div>
+                </div>                             
+            </div>
+        </div>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+        <![endif]-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tetris_v6.js"></script>
+    </body>
+</html>
